@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowerment Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Empowerment Initiative</h1>
+            <p>Connecting unemployed individuals with opportunities</p>
+        </header>
+
+        <!-- User Signup Form -->
+        <section id="signup-section">
+            <h2>Register Your Profile</h2>
+            <form id="signup-form">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="province">Province *</label>
+                    <select id="province" name="province" required>
+                        <option value="">Select a province</option>
+                        <option value="all">All</option>
+                        <option value="Gauteng">Gauteng</option>
+                        <option value="Western Cape">Western Cape</option>
+                        <option value="KwaZulu-Natal">KwaZulu-Natal</option>
+                        <option value="Eastern Cape">Eastern Cape</option>
+                        <option value="Free State">Free State</option>
+                        <option value="Limpopo">Limpopo</option>
+                        <option value="Mpumalanga">Mpumalanga</option>
+                        <option value="Northern Cape">Northern Cape</option>
+                        <option value="North West">North West</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <textarea id="skills" name="skills" rows="3" 
+                              placeholder="Enter your skills separated by commas (e.g., Web Development, Data Analysis, Customer Service, Communication)"></textarea>
+                    <small class="form-hint">List your skills separated by commas. This helps match you with relevant opportunities.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="qualifications">Qualifications</label>
+                    <textarea id="qualifications" name="qualifications" rows="3" 
+                              placeholder="Enter your qualifications separated by commas (e.g., Matric, Diploma in IT, Bachelor's in Business)"></textarea>
+                    <small class="form-hint">Include all your educational qualifications and certifications.</small>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label>
+                        <input type="checkbox" id="entrepreneurship" name="entrepreneurship">
+                        Yes, I am interested in entrepreneurship
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="workHistory">Work History</label>
+                    <textarea id="workHistory" name="workHistory" rows="4" 
+                              placeholder="Brief summary of your work experience"></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Register</button>
+            </form>
+            <div id="signup-message" class="message"></div>
+        </section>
+
+        <!-- Admin Data View -->
+        <section id="admin-section">
+            <h2>Data Insights</h2>
+            
+            <div class="admin-controls">
+                <div class="form-group">
+                    <label for="admin-province">Select Province:</label>
+                    <select id="admin-province">
+                        <option value="">Choose a province</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="data-display">
+                <div id="skills-section" class="data-section">
+                    <h3>Skill Distribution</h3>
+                    <div id="skills-list">
+                        <p class="no-data">Select a province to view skill distribution</p>
+                    </div>
+                </div>
+
+                <div id="entrepreneurship-section" class="data-section">
+                    <h3>Entrepreneurship Interest</h3>
+                    <div id="entrepreneurship-stats">
+                        <p class="no-data">Select a province to view entrepreneurship statistics</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
