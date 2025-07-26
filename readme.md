@@ -1,6 +1,6 @@
 # Empowerment Initiative MVP
 
-##TO-IMPLEMENT: FIND A WAY TO EXPORT DB INFO AS A CSV COMPATIBILY WITH THE DASHBOARD
+##TO-IMPLEMENT: FIND A WAY TO EXPORT DB INFO AS A CSV COMPATIBILY WITH THE DASHBOARD (07/26)
 
 A minimally viable product (MVP) for collecting data from unemployed individuals and providing basic administrative insights.
 
