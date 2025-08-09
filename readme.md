@@ -135,7 +135,3 @@ The database is automatically created on first run. To reset:
 
 ### Styling Customization
 Modify `public/style.css` to change the appearance. The design is responsive and mobile-friendly.
-
-## License
-
-MIT License - feel free to use this code for your empowerment initiatives!
